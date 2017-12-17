@@ -1,0 +1,45 @@
+{{#if message}}
+        <div class="alert alert-danger">{{message}}</div>
+    {{/if}}
+    <div class="page-header text-center">
+    <h1>
+        <span class="fa fa-anchor"></span> Search images</h1>
+    {{!-- <a href="/logout" class="btn btn-default btn-sm">Logout</a> --}}
+</div>
+
+<div class="row">
+
+    <!-- LOCAL INFORMATION -->
+    <div class="col-sm-6">
+        <div class="well">
+            <h3>
+              
+
+            <h1>Welcome</h1>
+
+        </div>
+        <form action="/keyword" name="myForm" method="post" onsubmit="required()">
+            <div class="form-group">
+                <label>Type Keyword</label>
+                <input type="text" class="form-control tags" name="tags">
+            </div>
+            <button type="submit" class="btn btn-warning btn-lg">Submit</button>
+        </form>
+    </div>
+
+</div>
+
+<script>
+    function required()   
+   {  
+        var x = document.forms["myForm"]["tags"].value;
+       console.log(x)
+     if (x.length == 0)  
+      {   
+         alert('please enter keyword first')       
+         return false;   
+      }       
+      return true;   
+    }   
+
+</script>
