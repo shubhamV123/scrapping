@@ -14,7 +14,7 @@ Download or clone the project:
 ```bash
 $ git clone https://github.com/shubhamV123/scrapping.git
 ```
-##### Note: change directory to jwt-NodeJs before going further installation.
+##### Note: change directory to scrapping before going further installation.
 
 
 
